@@ -3,7 +3,7 @@
 
 Api Deployed on Azure
 
-http://realpocapi.azurewebsites.net/swagger/ui/index
+http://realpocapi.azurewebsites.net/swagger/ui/index#/General
 
 Client Deployed on Azure
 
