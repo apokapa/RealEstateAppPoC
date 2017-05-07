@@ -1,0 +1,20 @@
+{
+  "name": "myproject",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "3.1.1",
+    "jquery-validation": "1.14.0",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "angular": "1.5.8",
+    "angular-ui-grid": "3.1.1",
+    "angular-ui-router": "0.4.2",
+    "angular-translate": "2.14.0",
+    "angular-pdf": "1.5.0",
+    "devextreme": "16.2.4",
+    "angular-recaptcha": "4.0.3"
+  },
+  "resolutions": {
+    "angular": "1.6.0"
+  }
+}
+

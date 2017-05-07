@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealPocDbScripts", "RealPocDbScripts", "{8D9A0AD2-6BEF-41A2-B848-75A056DE0111}"
+	ProjectSection(SolutionItems) = preProject
+		RealPocDbScripts\RealPOCdbscript.sql = RealPocDbScripts\RealPOCdbscript.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealPocBackend", "RealPocBackend", "{7C3D8243-D550-4E57-849C-CA05DA4EA2C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealPoc.Api", "RealPocBackend\RealPoc.Api\RealPoc.Api.csproj", "{263B3246-70FC-4EAE-AF72-5BE0D2703DC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealPoc.Api.Tests", "RealPoc.Api.Tests\RealPoc.Api.Tests.csproj", "{428E0A5E-CE5B-4F85-82E4-9F83559AA902}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealPocClient", "RealPocClient", "{EA265710-0AB8-4DC7-B689-C564E99C9CDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RealPocShared", "RealPocShared", "{E0513860-484D-471F-88C0-A0D2B157B550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealPoc.Model", "RealPocShared\RealPoc.Model\RealPoc.Model.csproj", "{6A316914-00DB-49D2-9C0C-2899D2E430F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealPoc.Api.Abstractions", "RealPocBackend\RealPoc.Api.Abstractions\RealPoc.Api.Abstractions.csproj", "{7AF5C13B-0228-4F6A-A9B5-1FEBAB7DB16E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealPoc.Api.Datastore.SqlDb", "RealPocBackend\RealPoc.Api.Datastore.SqlDb\RealPoc.Api.Datastore.SqlDb.csproj", "{F127805C-83C1-450E-AE11-F94154C87B00}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RealPocSpaApp", "RealPocClient\RealPocSpaApp\", "{136B4950-D394-41CF-9F1E-E763BC116AC6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49990"
+		Debug.AspNetCompiler.PhysicalPath = "RealPocClient\RealPocSpaApp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49990\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49990"
+		Release.AspNetCompiler.PhysicalPath = "RealPocClient\RealPocSpaApp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49990\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49990"
+		SlnRelativePath = "RealPocClient\RealPocSpaApp\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{263B3246-70FC-4EAE-AF72-5BE0D2703DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263B3246-70FC-4EAE-AF72-5BE0D2703DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263B3246-70FC-4EAE-AF72-5BE0D2703DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263B3246-70FC-4EAE-AF72-5BE0D2703DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428E0A5E-CE5B-4F85-82E4-9F83559AA902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428E0A5E-CE5B-4F85-82E4-9F83559AA902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428E0A5E-CE5B-4F85-82E4-9F83559AA902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428E0A5E-CE5B-4F85-82E4-9F83559AA902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A316914-00DB-49D2-9C0C-2899D2E430F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A316914-00DB-49D2-9C0C-2899D2E430F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A316914-00DB-49D2-9C0C-2899D2E430F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A316914-00DB-49D2-9C0C-2899D2E430F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF5C13B-0228-4F6A-A9B5-1FEBAB7DB16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF5C13B-0228-4F6A-A9B5-1FEBAB7DB16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF5C13B-0228-4F6A-A9B5-1FEBAB7DB16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF5C13B-0228-4F6A-A9B5-1FEBAB7DB16E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F127805C-83C1-450E-AE11-F94154C87B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F127805C-83C1-450E-AE11-F94154C87B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F127805C-83C1-450E-AE11-F94154C87B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F127805C-83C1-450E-AE11-F94154C87B00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136B4950-D394-41CF-9F1E-E763BC116AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136B4950-D394-41CF-9F1E-E763BC116AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136B4950-D394-41CF-9F1E-E763BC116AC6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{136B4950-D394-41CF-9F1E-E763BC116AC6}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{263B3246-70FC-4EAE-AF72-5BE0D2703DC8} = {7C3D8243-D550-4E57-849C-CA05DA4EA2C5}
+		{428E0A5E-CE5B-4F85-82E4-9F83559AA902} = {7C3D8243-D550-4E57-849C-CA05DA4EA2C5}
+		{6A316914-00DB-49D2-9C0C-2899D2E430F7} = {E0513860-484D-471F-88C0-A0D2B157B550}
+		{7AF5C13B-0228-4F6A-A9B5-1FEBAB7DB16E} = {7C3D8243-D550-4E57-849C-CA05DA4EA2C5}
+		{F127805C-83C1-450E-AE11-F94154C87B00} = {7C3D8243-D550-4E57-849C-CA05DA4EA2C5}
+		{136B4950-D394-41CF-9F1E-E763BC116AC6} = {EA265710-0AB8-4DC7-B689-C564E99C9CDF}
+	EndGlobalSection
+EndGlobal
