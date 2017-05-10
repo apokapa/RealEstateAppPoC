@@ -340,3 +340,40 @@ GO
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------STORED PROCEDURES END---------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------FUNCTIONS-------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+IF EXISTS (SELECT ROUTINE_NAME from information_schema.routines where routine_type = 'FUNCTION' AND ROUTINE_NAME='GET_SUBSTRING_BY_INDEX') DROP FUNCTION realpoc.GET_SUBSTRING_BY_INDEX
+GO
+CREATE FUNCTION realpoc.GET_SUBSTRING_BY_INDEX(@full_string nvarchar(max), @substring_index int, @split_string nvarchar(100)) RETURNS nvarchar(max)
+AS
+BEGIN
+	DECLARE			@i			int,
+					@index 		int,
+					@substring		nvarchar(max)
+
+	IF ISNULL(@full_string, '') = '' OR @substring_index <= 0 RETURN NULL
+	SET @i = 1
+
+	WHILE @i <= @substring_index
+	BEGIN
+		SET @full_string= LTRIM(@full_string)
+		IF ISNULL(@full_string, '') = '' RETURN NULL
+
+		SET @index  = CHARINDEX(@split_string , @full_string)
+		IF @index  = 0 SELECT @substring = @full_string, @full_string = ''
+		ELSE 	    SELECT @substring = SUBSTRING(@full_string, 1, @index -1), @full_string = SUBSTRING(@full_string, @index +LEN(@substring_index), 100000)
+		IF @i = @substring_index RETURN @substring
+		SET @i = @i + 1
+	END
+
+	RETURN NULL
+END
+GO
+
