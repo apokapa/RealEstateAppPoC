@@ -352,12 +352,13 @@ AS
 											
 
 
-IF (@zoom IS NOT NULL OR @zoom = 0)
+IF (@zoom IS NOT NULL AND @zoom <> 0)
 BEGIN
 
 SET @range = 11.75 * POWER ( 2  , 22 - @zoom ) --11.75 is FOR 800px x 800px MAP
 
 END
+
 
 IF @range<1000 SET @range=1000 -- Mimum distance of offers to show on google map
 IF @range>1000000 SET @range=1000000 -- Max distance of offers to show on google map
@@ -372,7 +373,9 @@ RETURN 0
 GO
 
 --SELECT * FROM realpoc.property_offer_vw
---EXEC realpoc.getOffersByRange_sp '40.59430000','23.04890000',2000,0
+--
+
+EXEC realpoc.getOffersByRange_sp '40.59430000','23.04890000',1000,0
 
 
 
