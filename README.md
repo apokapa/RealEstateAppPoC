@@ -8,3 +8,7 @@ http://realpocapi.azurewebsites.net/swagger/ui/index#/General
 Client Deployed on Azure
 
 http://realpocspa.azurewebsites.net/#!/index/main
+
+Started new project for Map Search with my Javascript enthusiast friend N.Zoumis    
+
+http://realpocmapsearch.azurewebsites.net/
