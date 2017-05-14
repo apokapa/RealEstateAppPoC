@@ -10,5 +10,6 @@ Client Deployed on Azure
 http://realpocspa.azurewebsites.net/#!/index/main
 
 Started new project for Map Search with my Javascript enthusiast friend N.Zoumis    
+Loaded Database with almost 1000 random generated geolocations so some properties could be considered Cruise Ships.
 
 http://realpocmapsearch.azurewebsites.net/
