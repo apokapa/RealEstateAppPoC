@@ -44,6 +44,16 @@ namespace RealPoc.Api.Controllers
         }
 
 
+        [HttpPost]
+        [Route("getPropertyOffersByRange")]
+        public async Task<IHttpActionResult> GetPropertyOffersByRange([FromBody]ByRangeRequest ByRangeRequest)
+        {
+            var results = await _GeneralRepository.GetPropertyOffersByRange(ByRangeRequest);
+            return Ok(results);
+        }
+
+
+
         [HttpGet]
         [Route("propertyLocations")]
         public async Task<IHttpActionResult> GetAllPropertyLocations()

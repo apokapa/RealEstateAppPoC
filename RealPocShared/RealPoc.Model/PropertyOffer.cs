@@ -23,6 +23,9 @@ namespace RealPoc.Model
         public string ConstructionYear { get; set;}
         public int Area { get; set; }
         public string OtherFeatures { get; set; }
+        public string Geolocation { get; set; }
+        public string PropertyLat { get; set; }
+        public string PropertyLng { get; set; }
         public byte[] FeaturedImage { get; set; }
         public DateTime LastUpdate { get; set; }
         public DateTime DateEntered { get; set; }

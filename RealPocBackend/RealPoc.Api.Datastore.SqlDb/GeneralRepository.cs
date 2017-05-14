@@ -35,6 +35,24 @@ namespace RealPoc.Api.Datastore.SqlDb
             }
         }
 
+
+        public async Task<IEnumerable<PropertyOffer>> GetPropertyOffersByRange(ByRangeRequest ByRangeRequest)
+        {
+
+            using (IDbConnection cn = Connection)
+            {
+                var p = new DynamicParameters();
+                p.Add("@lat", ByRangeRequest.lat);
+                p.Add("@lng", ByRangeRequest.lng);
+                p.Add("@range", ByRangeRequest.range);
+                p.Add("@zoom", ByRangeRequest.zoom);
+
+                cn.Open();
+                return await cn.QueryAsync<PropertyOffer>("realpoc.getOffersByRange_sp", p,commandType: CommandType.StoredProcedure);
+            }
+
+        }
+
         public async Task<IEnumerable<PropertyOffer>> GetAllPropertyOffers()
         {
 
@@ -67,6 +85,7 @@ namespace RealPoc.Api.Datastore.SqlDb
 
         }
 
+        
     }
 }
 

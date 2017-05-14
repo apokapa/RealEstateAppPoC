@@ -13,9 +13,13 @@ namespace RealPoc.Api.Abstractions
 
         Task<IEnumerable<PropertyOffer>> SearchForPropertyOffers(PropertySearch PropertySearch);
 
+        Task<IEnumerable<PropertyOffer>> GetPropertyOffersByRange(ByRangeRequest ByRangeRequest);
+
         Task<IEnumerable<PropertyLocation>> GetAllPropertyLocations();
 
         Task<IEnumerable<PropertyLocation>> SearchForPropertyLocations(string SearchString);
+
+       
 
     }
 
