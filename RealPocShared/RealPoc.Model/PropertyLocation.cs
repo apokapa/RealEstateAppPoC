@@ -8,8 +8,8 @@ namespace RealPoc.Model
 {
     public class PropertyLocation
     {
-        public string LocationCode { get; set; }
-        public string LocationDescription { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
 
     }
 }

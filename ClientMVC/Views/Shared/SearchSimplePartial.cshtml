@@ -1,0 +1,39 @@
+﻿@model ClientMVC.ViewModels.SearchViewModel
+
+
+@using (Html.BeginForm("Index", "Search", FormMethod.Get, new { id = "myForm" }))
+{
+    <div class="form-horizontal" style="padding-left:40px;padding-top:55px;padding-bottom:55px;" >
+        <div class="form-group">
+            <div class="col-md-10">
+                <h4>Desired locations</h4>
+                @Html.EditorFor(m => m.LocationCodes, new { @id = "LocationCodes", htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.LocationCodes, "", new { @id = "LocationValidation", @class = "text-danger" })
+            </div>
+        </div>
+        <h4 style="margin-top:30px">Other Criteria</h4>    
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownListFor(m => m.OfferTypeId, new SelectList(Model.OfferTypes, "Id", "Descr"), new { @id = "OfferTypeId", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownListFor(m => m.CategoryId, new SelectList(Model.Categories, "Id", "Descr"), "Select Category", new { @id = "CategoryId", @class = "form-control", @onchange = "javascript:GetSubCategories(this.value);" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownListFor(m => m.SubCategoryId, new SelectList(Model.SubCategories, "Id", "Descr"), "All Subcategories", new { @id = "SubCategoryId", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-0 col-md-10">
+                    <input id="BTN" type="submit" value="Search" class="btn btn-primary" />
+                </div>
+                <div class="col-md-offset-0 col-md-10">
+                    @Html.ActionLink("Skip to Map View", "Map", "Search", null, new { @class = "btn btn-warning", @style = "min-width: 280px !important;margin-top:5px" })
+                </div>
+            </div>
+        </div>
+}

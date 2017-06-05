@@ -41,11 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiError.cs" />
+    <Compile Include="Area.cs" />
     <Compile Include="ByRangeRequest.cs" />
+    <Compile Include="OfferType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyCategory.cs" />
     <Compile Include="PropertyLocation.cs" />
     <Compile Include="PropertyOffer.cs" />
     <Compile Include="PropertySearch.cs" />
+    <Compile Include="PropertySubCategory.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

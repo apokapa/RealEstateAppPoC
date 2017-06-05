@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Map";
+}
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Map Search</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="~/Content/Mapview/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+</head>
+
+<body style="padding-top:50px" >
+    <h4 style="text-align:center">MapView control by N.Zoumis (javascript) V.Kougioumtzis(api,sql)</h4>
+    <h5 style="text-align:center">Geolocation points are generated randomly for seed data and dont represent actual positions...</h5>
+    <div id="map"></div>
+   
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="~/scripts/Mapview/functions.js"></script>
+    <script src="~/scripts/Mapview/http.js"></script>
+    <script src="~/scripts/Mapview/nzapp.js"></script>
+    <script src="~/scripts/Mapview/services.js"></script>
+    <script src="~/scripts/Mapview/map-helper.js"></script>
+    <script src="~/scripts/Mapview/models.js"></script>
+    <script src="~/scripts/Mapview/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADNMEzi_8G4dGY8n4t4SIQ3Lz3bzqMAQg&callback=initMap" async
+            defer></script>
+</body>
+
+</html>

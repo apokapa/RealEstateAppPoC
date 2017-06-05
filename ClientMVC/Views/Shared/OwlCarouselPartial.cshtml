@@ -1,0 +1,27 @@
+﻿@model ClientMVC.ViewModels.HomeViewModel
+
+
+
+<hr />
+<h3 style="text-align:center" >Check these amazing offers!</h3>
+<hr />
+<div class="owl-carousel owl-theme">
+
+    @foreach (var offer in Model.Sponsored)
+    {
+        <div class="item">
+            <a href='@Url.Action("Index", "Offer", new { id = 1 }, null)'>
+                <div class="textoverlay" style="padding-left:5px" >
+                    <h4>@offer.PropertyLocation</h4>
+                    <p>Rent only for @offer.Price.ToString("C0") / Month</p>
+                </div>
+                <img src='@Url.Content("~/Content/Images/offers/"+@offer.FeaturedImageUrl)'/>
+            </a>
+        </div>
+
+    }
+
+</div>
+<hr />
+
+

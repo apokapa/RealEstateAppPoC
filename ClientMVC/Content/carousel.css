@@ -1,0 +1,10 @@
+﻿.owl-carousel div h2, .owl-carousel div .textoverlay{
+    position:absolute;
+    color:#FFF;
+    background-color:rgba(0, 0, 0, 0.41);
+    width: 100%;
+    height:50%;
+    font-size :12px;
+    display:block;
+    top:50%;
+}

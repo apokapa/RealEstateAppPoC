@@ -1,0 +1,43 @@
+﻿@model ClientMVC.ViewModels.SearchViewModel
+
+
+<div class="row">
+    <div class="col-sm-4" style="background-color:rgba(212, 212, 212, 0.24);margin-top:10px;">
+        @Html.Partial("SearchSimplePartial")
+    </div>
+
+    <div class="col-sm-8" style="background-color:rgba(223, 237, 253, 0.17);margin-top:10px;padding-left: 25px">
+        <h1>Results</h1>
+        <h4>@Model.TotalResults.ToString() Offers found</h4>
+
+        @foreach (var item in Model.Results)
+        {
+            <hr />
+            <h3>@Html.ActionLink(item.Title, "Index", "Offer", new { id = item.OfferId }, null)</h3>
+            <h4>@item.Description</h4>
+                    <hr />
+        }
+
+        <ul class="pagination">
+            @for (int i = Model.PagerStart; i <= Model.PagerEnd; i++)
+            {
+                <li class="@if (i == Model.Page){  @ViewBag.Active }">
+                    @Html.ActionLink(
+            i.ToString(),                                                       // linkText
+            "Index",                                                            // actionName
+            "Search",                                                           // controllerName
+                new
+                {                                                     // routeValues
+                    OfferTypeId = Model.OfferTypeId,
+                    CategoryId = Model.CategoryId,
+                    SubCategoryId = Model.SubCategoryId,
+                    LocationCodes = Model.LocationCodes,
+                    Page = i
+                },
+                 null                                                      // htmlAttributes
+                 )
+                </li>
+            }
+        </ul>
+    </div>
+</div>

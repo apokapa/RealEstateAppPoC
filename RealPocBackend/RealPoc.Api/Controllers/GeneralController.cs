@@ -43,6 +43,13 @@ namespace RealPoc.Api.Controllers
             return Ok(results);
         }
 
+        [HttpPost]
+        [Route("searchPropertyOffersPaged")]
+        public async Task<IHttpActionResult> GetAllPropertyOffersPaged([FromBody]PropertySearch propertySearch)
+        {
+            var results = await _GeneralRepository.SearchForPropertyOffersPaged(propertySearch);
+            return Ok(results);
+        }
 
         [HttpPost]
         [Route("getPropertyOffersByRange")]
@@ -51,7 +58,6 @@ namespace RealPoc.Api.Controllers
             var results = await _GeneralRepository.GetPropertyOffersByRange(ByRangeRequest);
             return Ok(results);
         }
-
 
 
         [HttpGet]

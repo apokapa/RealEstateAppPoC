@@ -27,8 +27,10 @@ namespace RealPoc.Model
         public string PropertyLat { get; set; }
         public string PropertyLng { get; set; }
         public byte[] FeaturedImage { get; set; }
+        public string FeaturedImageUrl { get; set; }
         public DateTime LastUpdate { get; set; }
         public DateTime DateEntered { get; set; }
+        public int? TotalResults { get; set; }
 
     }
 }

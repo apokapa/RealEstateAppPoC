@@ -68,6 +68,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RealPocMapApp", "RealPocCli
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExperimentClients", "ExperimentClients", "{95B77F26-89D3-44FA-AF38-ECA3A9884EFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientMVC", "ClientMVC\ClientMVC.csproj", "{ECF00C93-20FB-4625-B757-A53FC321F7D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -102,6 +106,10 @@ Global
 		{9A511EE4-E218-430E-8849-ABA985755772}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A511EE4-E218-430E-8849-ABA985755772}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A511EE4-E218-430E-8849-ABA985755772}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{ECF00C93-20FB-4625-B757-A53FC321F7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF00C93-20FB-4625-B757-A53FC321F7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF00C93-20FB-4625-B757-A53FC321F7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF00C93-20FB-4625-B757-A53FC321F7D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,5 +122,6 @@ Global
 		{F127805C-83C1-450E-AE11-F94154C87B00} = {7C3D8243-D550-4E57-849C-CA05DA4EA2C5}
 		{136B4950-D394-41CF-9F1E-E763BC116AC6} = {EA265710-0AB8-4DC7-B689-C564E99C9CDF}
 		{9A511EE4-E218-430E-8849-ABA985755772} = {EA265710-0AB8-4DC7-B689-C564E99C9CDF}
+		{ECF00C93-20FB-4625-B757-A53FC321F7D2} = {95B77F26-89D3-44FA-AF38-ECA3A9884EFC}
 	EndGlobalSection
 EndGlobal
