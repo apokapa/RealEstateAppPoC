@@ -1,6 +1,9 @@
 # RealPoC ,Seed Version,Work in progress
 "Proof of concept" seed project for REAL ESTATE APP with MSSQL db, WebApi2 , AngularJS client
 
+
+#### (Azure deployments take a while to do first load if they werent used recently because they are on a free app plan)
+
 ## Api Deployed on Azure
 
 http://realpocapi.azurewebsites.net/swagger/ui/index#/General
