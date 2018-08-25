@@ -2,7 +2,12 @@
 "Proof of concept" seed project for REAL ESTATE APP with MSSQL db, WebApi2 , AngularJS client
 
 
+
+
+#Azure database subscription stoped as of 25/08/2018, keeping links below for future reference
+
 #### (Azure deployments take a while to do first load if they werent used recently because they are on a free app plan)
+
 
 ## Api Deployed on Azure
 
